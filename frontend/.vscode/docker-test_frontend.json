@@ -1,0 +1,15 @@
+{
+	"workspaceFolder": "/node/app",
+	"remoteUser": "node",
+	"extensions": [
+		"bradlc.vscode-tailwindcss",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"GraphQL.vscode-graphql",
+		"ms-azuretools.vscode-docker",
+		"naumovs.color-highlight",
+		"riazxrazor.html-to-jsx",
+		"TedisAgolli.hex-to-tailwind",
+		"WallabyJs.quokka-vscode"
+	]
+}

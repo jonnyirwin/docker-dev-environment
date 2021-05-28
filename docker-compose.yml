@@ -1,0 +1,22 @@
+services:
+    frontend:
+        build:
+          context: ./frontend
+          target: dev
+        volumes:
+          - ./frontend/src:/node/app/src
+          - ./frontend/public:/node/app/public
+          - ./frontend/package.json:/node/app/package.json
+        ports:
+            - 8080:3000
+        env_file: .env
+        environment:
+          - API_BASE_URL=${API_BASE_URL}
+        command: ["next", "dev"]
+        #    backend:
+        #build: ./backend
+        #volumes:
+        #    - ./backend:/backend
+        #ports:
+        #    - 3000:3000
+        #env_file: .env
